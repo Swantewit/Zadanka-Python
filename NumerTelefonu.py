@@ -2,8 +2,8 @@ import re
 
 moList = []
 phoneList = []
-phoneNumRegex1 = re.compile(r'(\d\d\d)\s\d\d\s\d\d\s\d\d\d')
-phoneNumRegex2 = re.compile(r'(\d\d)\s\d\d\s\d\d\d\s\d\d')
+phoneNumRegex1 = re.compile(r'\(\d\d\d\)\s\d\d\s\d\d\s\d\d\d')
+phoneNumRegex2 = re.compile(r'\(\d\d\)\s\d\d\s\d\d\d\s\d\d')
 phoneNumRegex3 = re.compile(r'\d\d\d\d\d\d\d\d\d')
 phoneNumRegex4 = re.compile(r'\d\d\d\d\d\d\d')
 phoneNumRegex5 = re.compile(r'0048 \d\d\d \d\d\d \d\d\d')
