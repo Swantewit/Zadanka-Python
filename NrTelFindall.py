@@ -16,6 +16,7 @@ phoneRegex11 = re.compile(r'\d\d\d-\d\d-\d\d') #443-21-80
 phoneRegex12 = re.compile(r'\d\d\s\d\d\d\s\d\d\s\d\d') #22 443 21 80
 
 
+
 print('Witamy w programie "Znajdź polski numer telefonu?"\nWpisz tekst, by sprawdzić, czy zawiera polski numer telefonu\nWpisz "Wyjdź", aby zakończyć...')
 
 
@@ -45,7 +46,9 @@ def toNumerTelefonu(numer):
         else:
                 moList = [mo1, mo2, mo3, mo4, mo5, mo6, mo7, mo8, mo9, mo10, mo11, mo12]
         filterNumber(moList)
-        print('Znaleziono następujące numery' + str(phoneList))
+        numery = map(str, phoneList)
+        print('Znaleziono następujące numery')
+        print(', '.join(numery))
         
 
 while True:
